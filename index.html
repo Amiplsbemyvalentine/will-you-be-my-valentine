@@ -3,7 +3,6 @@
         <title> Hi Ami!</title>
         <link rel="icon" type ="image/x-icon" href ="heart-icon-y1k.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             div.image{
                 position:absolute;
@@ -17,10 +16,13 @@
                 font-family: "Poppins";
             }
             div.buttons{
-                position: relative;
+                position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                top: 15%;
+                top: 100%;
+                max-width: 75%;
+                max-height: 300px;
+                display: inline-flex;
             }
             button{
                 padding: auto;
@@ -49,11 +51,11 @@
     <body>
         <div class = "image">
             <iframe id ="image" src="https://giphy.com/embed/qUIm5wu6LAAog" width="480" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            <p id ="valentine" class = "Valentine"> Will you be my valentine?</p> 
-        </div>
-        <div class = "buttons">
-            <button type="button" class="yes" id="yes" onclick = "yesfunction()">Yes</button>
-            <button type="button" class="no" id="no" onclick="nofunction()">No</button>
+            <p id ="valentine" class = "Valentine"> Will you be my valentine?</p>
+                <div class = "buttons">
+                    <button type="button" class="yes" id="yes" onclick = "yesfunction()">Yes</button>
+                    <button type="button" class="no" id="no" onclick="nofunction()">No</button>
+                </div>
         </div>
         <script>
             function nofunction(){
